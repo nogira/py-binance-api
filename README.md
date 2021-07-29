@@ -23,7 +23,7 @@ pip install py-binance-api
 ```
 
 ```py
-import pybinanceapi as pb
+import py-binance-api as pb
 
 # declare api key and secret
 # (can also declare 'baseurl' (default is https://api.binance.com) or 'email' (change '@' to '%40'))
