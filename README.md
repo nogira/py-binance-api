@@ -19,11 +19,11 @@ Notes:
 ### Basic Setup
 
 ```shell
-pip install py-binance-api
+pip install pybinanceapi
 ```
 
 ```py
-import py-binance-api as pb
+import pybinanceapi as pb
 
 # declare api key and secret
 # (can also declare 'baseurl' (default is https://api.binance.com) or 'email' (change '@' to '%40'))
