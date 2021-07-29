@@ -1,6 +1,6 @@
 # Python Wrapper for the Binance API
 
-Made by scraping [binance docs](https://binance-docs.github.io/apidocs) to allow for easy updates as the API changes. 
+Made by scraping [binance docs](https://binance-docs.github.io/apidocs) to allow for easy updates as binance changes the API. 
 
 Functions include some documentation, but if in need of more information, read the [binance docs](https://binance-docs.github.io/apidocs) (The parameters listed in the docs are the same name as in the python wrapper).
 
