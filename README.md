@@ -4,7 +4,7 @@ Made by scraping [binance docs](https://binance-docs.github.io/apidocs) to allow
 
 Functions include some documentation, but if in need of more information, read the [binance docs](https://binance-docs.github.io/apidocs) (The parameters listed in the docs are the same name as in the python wrapper).
 
-Also, to find the name of a function based on its title in the binance docs, just search the `API title -> function name.md` file in this repository.
+Also, to find the name of a function based on its title in the binance docs, just search the `function names.md` file in this repository.
 
 <br>
 
