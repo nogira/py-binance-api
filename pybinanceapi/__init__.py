@@ -1,5 +1,5 @@
 # package version
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 from .generated import *
 
@@ -18,7 +18,7 @@ Possible Values:
 ## email
 - Must replace '@' with '%40' 
     """
-    generated.baseurl = baseurl
-    generated.api_key = api_key
-    generated.api_secret = api_secret
-    generated.email = email
+    if baseurl != '': generated.baseurl = baseurl
+    if api_key != '': generated.api_key = api_key
+    if api_secret != '': generated.api_secret = api_secret
+    if email != '': generated.email = email
