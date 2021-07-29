@@ -243,8 +243,8 @@ def add_func_to_pyFile():
         out['securityType'] = 'API'
 
     # --------------------------START ADDING TO pyFile--------------------------
-                                                        # 👽👽👍👍
-    if out['title'] != '' and out['requestType'] != '':       # only doing it for GET until i know how to do POST (kinda risky to try given that it changes my binance data, but perhaps just do it on the testnet or stuff like "Toggle BNB Burn On Spot Trade And Margin Interest (USER_DATA)"
+
+    if out['title'] != '' and out['requestType'] != '':
         
         out['pyFile'] += f"def {functionnames[out['title']]}({out['paramsInput']}):\n"\
                     f"    \"\"\"# {out['title']}\n"\
