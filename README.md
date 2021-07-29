@@ -32,3 +32,9 @@ pb.getKline(symbol='BTCBUSD', interval='1m')
 #    '4.40163100',1627491659999,'176503.34747241',243,'1.33479500','53523.47926157','0'], ...etc
 
 ```
+
+<br>
+
+<br>
+
+## [Support Me :)](https://nogira.github.io/generate/donate.html)
