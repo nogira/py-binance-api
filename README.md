@@ -19,7 +19,7 @@ Notes:
 ### Basic Setup
 
 ```shell
-pip install pybinanceapi
+pip install py-binance-api
 ```
 
 ```py
