@@ -47,7 +47,9 @@ def postbinancedata_sig(endpoint, params, ):
 
 def deletebinancedata_sig(endpoint, params, ):
     x = requests.delete(baseurl+endpoint, data=getparams(params),headers=getheaders())
-    return x.json()# ------------------------------------------------------------------------------
+    return x.json()
+
+# ------------------------------------------------------------------------------
 
 #                               Wallet Endpoints
 

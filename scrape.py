@@ -48,7 +48,7 @@ for elem in split1:
 
 # import api core
 core = open('/'.join(__file__.split('/')[:-1])+'/core.py').read()
-out['pyFile'] += core
+out['pyFile'] += core+"\n\n"
 
 # function that adds the function to the file
 def add_func_to_pyFile():
