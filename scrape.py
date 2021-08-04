@@ -57,8 +57,12 @@ def add_func_to_pyFile():
     print(out['title'])
 
     # set security type
-    type1 = 'TRADE' in out['title'] or 'MARGIN' in out['title']\
-        or 'USER_DATA' in out['title'] or '(HMAC SHA256)' in out['endpoint']
+    type1 = (
+        'TRADE' in out['title'] 
+        or 'MARGIN' in out['title']
+        or 'USER_DATA' in out['title'] 
+        or '(HMAC SHA256)' in out['endpoint']
+    )
 
     if type1:
         out['securityType'] = 'API+sig'
@@ -69,18 +73,20 @@ def add_func_to_pyFile():
 
     if out['title'] != '' and out['requestType'] != '':
         
-        out['pyFile'] += f"def {functionnames[out['title']]}({out['paramsInput']}):\n"\
-                    f"    \"\"\"# {out['title']}\n"\
-                    f"#### `{out['endpoint']}`\n"\
-                    f"{out['upperInfo']}\n"\
-                    f"### {out['weight']}\n"
+        out['pyFile'] += (
+            f"def {functionnames[out['title']]}({out['paramsInput']}):\n"
+            f"    \"\"\"# {out['title']}\n"
+            f"#### `{out['endpoint']}`\n"
+            f"{out['upperInfo']}\n"
+            f"### {out['weight']}\n"
+        )
 
         # -------------------------TABLE-------------------------
         if out['paramTable'] != {}:
             col_names = list(out['paramTable'].keys())
             num_cols = len(col_names)
-            tbl = '\t|'.join(col_names)+\
-                  '\n'+'--------|'*(num_cols-1) + '--------\n'
+            tbl = ('\t|'.join(col_names)+
+                  '\n'+'--------|'*(num_cols-1) + '--------\n')
             for i in range(len(out['paramTable'][col_names[0]])):
                 temp_list = [out['paramTable'][col][i] for col in col_names]
                 tbl += '\t|'.join(temp_list)+'\n'
@@ -104,24 +110,28 @@ def add_func_to_pyFile():
                                         .replace(' (HMAC SHA256)', '')\
                                         .strip()
 
-        out['pyFile'] += f"    endpoint = '{out['endpoint']}'\n"\
-                        "    params = {\n"\
-                        f"{out['mandParamsDict']}\n"\
-                        "    }\n"\
-                        f"{out['optParamsDict']}\n"
+        out['pyFile'] += (
+            f"    endpoint = '{out['endpoint']}'\n"
+            "    params = {\n"
+            f"{out['mandParamsDict']}\n"
+            "    }\n"
+            f"{out['optParamsDict']}\n"
+        )
 
+        retrn = "\n    return "
+        args = "(endpoint, params)\n\n\n"
 
         if out['requestType'] == 'GET':
             if out['securityType'] == 'API+sig':
-                out['pyFile'] += f"\n    return getbinancedata_sig(endpoint, params)\n\n\n"
+                out['pyFile'] += f"{retrn}getbinancedata_sig{args}"
             else:
-                out['pyFile'] += f"\n    return getbinancedata(endpoint, params)\n\n\n"
+                out['pyFile'] += f"{retrn}getbinancedata{args}"
 
         elif out['requestType'] == 'POST':
-            out['pyFile'] += f"\n    return postbinancedata_sig(endpoint, params)\n\n\n"
+            out['pyFile'] += f"{retrn}postbinancedata_sig{args}"
         
         elif out['requestType'] == 'DELETE':
-            out['pyFile'] += f"\n    return deletebinancedata_sig(endpoint, params)\n\n\n"
+            out['pyFile'] += f"{retrn}deletebinancedata_sig{args}"
 
 
 start = False
@@ -133,17 +143,17 @@ for i in range(html_list_len):
     
     # wait for the starting h1 tag
     if not(start) and type(content) == element.Tag and content.has_attr('id'):
-        if 'wallet-endpoints' in content['id']\
-             or 'spot-account-trade' in content['id']\
-                 or 'savings-endpoints' in content['id']:
+        if ('wallet-endpoints' in content['id']
+        or 'spot-account-trade' in content['id']
+        or 'savings-endpoints' in content['id']):
             start = True
 
 
     if start:
     
         # set contents
-        if type(content) != element.NavigableString and\
-        len(content.contents) > 0:
+        if (type(content) != element.NavigableString 
+        and len(content.contents) > 0):
             content_i0 = str(content.contents[0])
 
         # skip blank lines
@@ -154,8 +164,8 @@ for i in range(html_list_len):
         elif content.name == 'h1':
             
             # pause adding to pyFile if reaches websocket section
-            if 'websocket-market-streams' in content['id']\
-                or 'user-data-streams' in content['id']:
+            if ('websocket-market-streams' in content['id']
+            or 'user-data-streams' in content['id']):
                 start = False
 
             # end looping if it reaches the first heading which has no APIs
@@ -182,7 +192,7 @@ for i in range(html_list_len):
         elif content.name == 'p':
 
             isRIGHTaftertitle = out['title'] != '' and out['endpoint'] == ''
-            isrequest = ('GET /' in content_i0 or 'Get /' in content_i0\
+            isrequest = ('GET /' in content_i0 or 'Get /' in content_i0
                         or 'POST /' in content_i0 or 'DELETE /' in content_i0)
 
             isaftertitlebeforeparam = out['title'] != '' and out['paramTable'] == {}
@@ -222,8 +232,8 @@ for i in range(html_list_len):
             else: print('??????', content_i0)
 
         #                                        only get the params table
-        elif content.name == 'table' and out['paramsPresent'] and out['paramTable'] == {}\
-            and 'Name' in str(content):
+        elif (content.name == 'table' and out['paramsPresent'] 
+        and out['paramTable'] == {} and 'Name' in str(content)):
             
 
             # ------------------TITLES------------------

@@ -6,3 +6,4 @@ notes.md
 dist
 build
 pybinanceapi.egg-info
+*.sh
