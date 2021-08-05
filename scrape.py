@@ -7,14 +7,12 @@ soup = BeautifulSoup(x.text, "html.parser")
 content_list = soup.find('div', class_="content").contents
 
 out = {}
+# initialise outside of reset_out so pyfile doesn't get reset
+out['pyFile'] = ''
 
 def reset_out():
     global out
-
-    # initialise if empty
-    if out == {}:
-        out['pyFile'] = ''
-
+    
     # reset
     out['requestType'] = ''    # GET, POST, DELETE
     out['securityType'] = ''   # 'API+sig', 'API'
@@ -277,7 +275,7 @@ for i in range(html_list_len):
                 if len(opt_list) > 0:
                     out['paramsInput'] += '="", '.join(opt_list)+'=""'
 
-                    temp_list = [f'    if {param} != "": params["{param}"] = {param}' 
+                    temp_list = [f'    if {param}: params["{param}"] = {param}' 
                                     for param in opt_list]
                     out['optParamsDict'] += '\n'.join(temp_list)
 

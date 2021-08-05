@@ -88,7 +88,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -114,10 +114,10 @@ timestamp	|LONG	|YES	|
     params = {
         "type": type
     }
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -138,7 +138,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -159,7 +159,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -191,12 +191,12 @@ timestamp	|LONG	|YES	|
         "address": address,
         "amount": amount
     }
-    if withdrawOrderId != "": params["withdrawOrderId"] = withdrawOrderId
-    if network != "": params["network"] = network
-    if addressTag != "": params["addressTag"] = addressTag
-    if transactionFeeFlag != "": params["transactionFeeFlag"] = transactionFeeFlag
-    if name != "": params["name"] = name
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if withdrawOrderId: params["withdrawOrderId"] = withdrawOrderId
+    if network: params["network"] = network
+    if addressTag: params["addressTag"] = addressTag
+    if transactionFeeFlag: params["transactionFeeFlag"] = transactionFeeFlag
+    if name: params["name"] = name
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -224,13 +224,13 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if coin != "": params["coin"] = coin
-    if status != "": params["status"] = status
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if offset != "": params["offset"] = offset
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if coin: params["coin"] = coin
+    if status: params["status"] = status
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if offset: params["offset"] = offset
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -258,13 +258,13 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if coin != "": params["coin"] = coin
-    if status != "": params["status"] = status
-    if offset != "": params["offset"] = offset
-    if limit != "": params["limit"] = limit
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if coin: params["coin"] = coin
+    if status: params["status"] = status
+    if offset: params["offset"] = offset
+    if limit: params["limit"] = limit
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -288,8 +288,8 @@ timestamp	|LONG	|YES	|
     params = {
         "coin": coin
     }
-    if network != "": params["network"] = network
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if network: params["network"] = network
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -311,7 +311,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -333,7 +333,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -357,9 +357,9 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -385,11 +385,11 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if asset != "": params["asset"] = asset
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -413,9 +413,9 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if asset != "": params["asset"] = asset
-    if needBtcValuation != "": params["needBtcValuation"] = needBtcValuation
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if needBtcValuation: params["needBtcValuation"] = needBtcValuation
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -437,7 +437,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -471,13 +471,13 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if fromEmail != "": params["fromEmail"] = fromEmail
-    if toEmail != "": params["toEmail"] = toEmail
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if page != "": params["page"] = page
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if fromEmail: params["fromEmail"] = fromEmail
+    if toEmail: params["toEmail"] = toEmail
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if page: params["page"] = page
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -506,11 +506,11 @@ timestamp	|LONG	|YES	|
         "email": email,
         "futuresType": futuresType
     }
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if page != "": params["page"] = page
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if page: params["page"] = page
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -541,7 +541,7 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -566,10 +566,10 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if email != "": params["email"] = email
-    if page != "": params["page"] = page
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if email: params["email"] = email
+    if page: params["page"] = page
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -595,8 +595,8 @@ timestamp	|LONG	|YES	|
         "email": email,
         "coin": coin
     }
-    if network != "": params["network"] = network
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if network: params["network"] = network
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -625,13 +625,13 @@ timestamp	|LONG	|YES	|
     params = {
         "email": email
     }
-    if coin != "": params["coin"] = coin
-    if status != "": params["status"] = status
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if offset != "": params["offset"] = offset
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if coin: params["coin"] = coin
+    if status: params["status"] = status
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if offset: params["offset"] = offset
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -654,8 +654,8 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if email != "": params["email"] = email
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if email: params["email"] = email
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -678,7 +678,7 @@ timestamp	|LONG	|YES	|
     params = {
         "email": email
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -701,7 +701,7 @@ timestamp	|LONG	|YES	|
     params = {
         "email": email
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -723,7 +723,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -746,7 +746,7 @@ timestamp	|LONG	|YES	|
     params = {
         "email": email
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -769,7 +769,7 @@ timestamp	|LONG	|YES	|
     params = {
         "email": email
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -791,7 +791,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -814,7 +814,7 @@ timestamp	|LONG	|YES	|
     params = {
         "email": email
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -897,7 +897,7 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -922,7 +922,7 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -949,12 +949,12 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if asset != "": params["asset"] = asset
-    if type != "": params["type"] = type
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if type: params["type"] = type
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -985,9 +985,9 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if fromEmail != "": params["fromEmail"] = fromEmail
-    if toEmail != "": params["toEmail"] = toEmail
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if fromEmail: params["fromEmail"] = fromEmail
+    if toEmail: params["toEmail"] = toEmail
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1015,13 +1015,13 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if fromEmail != "": params["fromEmail"] = fromEmail
-    if toEmail != "": params["toEmail"] = toEmail
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if page != "": params["page"] = page
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if fromEmail: params["fromEmail"] = fromEmail
+    if toEmail: params["toEmail"] = toEmail
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if page: params["page"] = page
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1046,7 +1046,7 @@ timestamp	|LONG	|YES	|
         "email": email,
         "futuresType": futuresType
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1071,9 +1071,9 @@ timestamp	|LONG	|YES	|
     params = {
         "futuresType": futuresType
     }
-    if page != "": params["page"] = page
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if page: params["page"] = page
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1098,7 +1098,7 @@ timestamp	|LONG	|YES	|
         "email": email,
         "futuresType": futuresType
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1123,7 +1123,7 @@ timestamp	|LONG	|YES	|
         "email": email,
         "enableBlvt": enableBlvt
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1150,7 +1150,7 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1173,7 +1173,7 @@ timestamp	|LONG	|YES	|
     params = {
         "email": email
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1201,8 +1201,8 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if transferDate != "": params["transferDate"] = transferDate
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if transferDate: params["transferDate"] = transferDate
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1283,7 +1283,7 @@ limit	|INT	|NO	|Default 100; max 5000. Valid limits:[5, 10, 20, 50, 100, 500, 10
     params = {
         "symbol": symbol
     }
-    if limit != "": params["limit"] = limit
+    if limit: params["limit"] = limit
 
     return getbinancedata(endpoint, params)
 
@@ -1306,7 +1306,7 @@ limit	|INT	|NO	|Default 500; max 1000.
     params = {
         "symbol": symbol
     }
-    if limit != "": params["limit"] = limit
+    if limit: params["limit"] = limit
 
     return getbinancedata(endpoint, params)
 
@@ -1330,8 +1330,8 @@ fromId	|LONG	|NO	|Trade id to fetch from. Default gets most recent trades.
     params = {
         "symbol": symbol
     }
-    if limit != "": params["limit"] = limit
-    if fromId != "": params["fromId"] = fromId
+    if limit: params["limit"] = limit
+    if fromId: params["fromId"] = fromId
 
     return getbinancedata(endpoint, params)
 
@@ -1358,10 +1358,10 @@ limit	|INT	|NO	|Default 500; max 1000.
     params = {
         "symbol": symbol
     }
-    if fromId != "": params["fromId"] = fromId
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
+    if fromId: params["fromId"] = fromId
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
 
     return getbinancedata(endpoint, params)
 
@@ -1389,9 +1389,9 @@ limit	|INT	|NO	|Default 500; max 1000.
         "symbol": symbol,
         "interval": interval
     }
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
 
     return getbinancedata(endpoint, params)
 
@@ -1434,7 +1434,7 @@ symbol	|STRING	|NO	|
     params = {
 
     }
-    if symbol != "": params["symbol"] = symbol
+    if symbol: params["symbol"] = symbol
 
     return getbinancedata(endpoint, params)
 
@@ -1455,7 +1455,7 @@ symbol	|STRING	|NO	|
     params = {
 
     }
-    if symbol != "": params["symbol"] = symbol
+    if symbol: params["symbol"] = symbol
 
     return getbinancedata(endpoint, params)
 
@@ -1476,7 +1476,7 @@ symbol	|STRING	|NO	|
     params = {
 
     }
-    if symbol != "": params["symbol"] = symbol
+    if symbol: params["symbol"] = symbol
 
     return getbinancedata(endpoint, params)
 
@@ -1537,15 +1537,15 @@ Additional mandatory parameters based on Other info:Trigger order price rules ag
         "side": side,
         "type": type
     }
-    if timeInForce != "": params["timeInForce"] = timeInForce
-    if quantity != "": params["quantity"] = quantity
-    if quoteOrderQty != "": params["quoteOrderQty"] = quoteOrderQty
-    if price != "": params["price"] = price
-    if newClientOrderId != "": params["newClientOrderId"] = newClientOrderId
-    if stopPrice != "": params["stopPrice"] = stopPrice
-    if icebergQty != "": params["icebergQty"] = icebergQty
-    if newOrderRespType != "": params["newOrderRespType"] = newOrderRespType
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if timeInForce: params["timeInForce"] = timeInForce
+    if quantity: params["quantity"] = quantity
+    if quoteOrderQty: params["quoteOrderQty"] = quoteOrderQty
+    if price: params["price"] = price
+    if newClientOrderId: params["newClientOrderId"] = newClientOrderId
+    if stopPrice: params["stopPrice"] = stopPrice
+    if icebergQty: params["icebergQty"] = icebergQty
+    if newOrderRespType: params["newOrderRespType"] = newOrderRespType
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1572,10 +1572,10 @@ Either <strong>Data Source:</strong>    """
     params = {
         "symbol": symbol
     }
-    if orderId != "": params["orderId"] = orderId
-    if origClientOrderId != "": params["origClientOrderId"] = origClientOrderId
-    if newClientOrderId != "": params["newClientOrderId"] = newClientOrderId
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if orderId: params["orderId"] = orderId
+    if origClientOrderId: params["origClientOrderId"] = origClientOrderId
+    if newClientOrderId: params["newClientOrderId"] = newClientOrderId
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return deletebinancedata_sig(endpoint, params)
 
@@ -1601,9 +1601,9 @@ Notes:<strong>Data Source:</strong>    """
     params = {
         "symbol": symbol
     }
-    if orderId != "": params["orderId"] = orderId
-    if origClientOrderId != "": params["origClientOrderId"] = origClientOrderId
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if orderId: params["orderId"] = orderId
+    if origClientOrderId: params["origClientOrderId"] = origClientOrderId
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1627,8 +1627,8 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if symbol != "": params["symbol"] = symbol
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if symbol: params["symbol"] = symbol
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1656,11 +1656,11 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if orderId != "": params["orderId"] = orderId
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if orderId: params["orderId"] = orderId
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1699,15 +1699,15 @@ Other Info:<strong>Data Source:</strong>    """
         "price": price,
         "stopPrice": stopPrice
     }
-    if listClientOrderId != "": params["listClientOrderId"] = listClientOrderId
-    if limitClientOrderId != "": params["limitClientOrderId"] = limitClientOrderId
-    if limitIcebergQty != "": params["limitIcebergQty"] = limitIcebergQty
-    if stopClientOrderId != "": params["stopClientOrderId"] = stopClientOrderId
-    if stopLimitPrice != "": params["stopLimitPrice"] = stopLimitPrice
-    if stopIcebergQty != "": params["stopIcebergQty"] = stopIcebergQty
-    if stopLimitTimeInForce != "": params["stopLimitTimeInForce"] = stopLimitTimeInForce
-    if newOrderRespType != "": params["newOrderRespType"] = newOrderRespType
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if listClientOrderId: params["listClientOrderId"] = listClientOrderId
+    if limitClientOrderId: params["limitClientOrderId"] = limitClientOrderId
+    if limitIcebergQty: params["limitIcebergQty"] = limitIcebergQty
+    if stopClientOrderId: params["stopClientOrderId"] = stopClientOrderId
+    if stopLimitPrice: params["stopLimitPrice"] = stopLimitPrice
+    if stopIcebergQty: params["stopIcebergQty"] = stopIcebergQty
+    if stopLimitTimeInForce: params["stopLimitTimeInForce"] = stopLimitTimeInForce
+    if newOrderRespType: params["newOrderRespType"] = newOrderRespType
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1733,10 +1733,10 @@ Additional notes:<strong>Data Source:</strong>    """
     params = {
         "symbol": symbol
     }
-    if orderListId != "": params["orderListId"] = orderListId
-    if listClientOrderId != "": params["listClientOrderId"] = listClientOrderId
-    if newClientOrderId != "": params["newClientOrderId"] = newClientOrderId
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if orderListId: params["orderListId"] = orderListId
+    if listClientOrderId: params["listClientOrderId"] = listClientOrderId
+    if newClientOrderId: params["newClientOrderId"] = newClientOrderId
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return deletebinancedata_sig(endpoint, params)
 
@@ -1760,9 +1760,9 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if orderListId != "": params["orderListId"] = orderListId
-    if origClientOrderId != "": params["origClientOrderId"] = origClientOrderId
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if orderListId: params["orderListId"] = orderListId
+    if origClientOrderId: params["origClientOrderId"] = origClientOrderId
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1788,11 +1788,11 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if fromId != "": params["fromId"] = fromId
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if fromId: params["fromId"] = fromId
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1814,7 +1814,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1837,7 +1837,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1865,11 +1865,11 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if fromId != "": params["fromId"] = fromId
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if fromId: params["fromId"] = fromId
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -1902,7 +1902,7 @@ timestamp	|LONG	|YES	|
         "amount": amount,
         "type": type
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1929,9 +1929,9 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if symbol != "": params["symbol"] = symbol
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isIsolated: params["isIsolated"] = isIsolated
+    if symbol: params["symbol"] = symbol
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -1958,9 +1958,9 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "amount": amount
     }
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if symbol != "": params["symbol"] = symbol
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isIsolated: params["isIsolated"] = isIsolated
+    if symbol: params["symbol"] = symbol
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -2094,17 +2094,17 @@ timestamp	|LONG	|YES	|
         "side": side,
         "type": type
     }
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if quantity != "": params["quantity"] = quantity
-    if quoteOrderQty != "": params["quoteOrderQty"] = quoteOrderQty
-    if price != "": params["price"] = price
-    if stopPrice != "": params["stopPrice"] = stopPrice
-    if newClientOrderId != "": params["newClientOrderId"] = newClientOrderId
-    if icebergQty != "": params["icebergQty"] = icebergQty
-    if newOrderRespType != "": params["newOrderRespType"] = newOrderRespType
-    if sideEffectType != "": params["sideEffectType"] = sideEffectType
-    if timeInForce != "": params["timeInForce"] = timeInForce
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isIsolated: params["isIsolated"] = isIsolated
+    if quantity: params["quantity"] = quantity
+    if quoteOrderQty: params["quoteOrderQty"] = quoteOrderQty
+    if price: params["price"] = price
+    if stopPrice: params["stopPrice"] = stopPrice
+    if newClientOrderId: params["newClientOrderId"] = newClientOrderId
+    if icebergQty: params["icebergQty"] = icebergQty
+    if newOrderRespType: params["newOrderRespType"] = newOrderRespType
+    if sideEffectType: params["sideEffectType"] = sideEffectType
+    if timeInForce: params["timeInForce"] = timeInForce
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -2131,11 +2131,11 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if orderId != "": params["orderId"] = orderId
-    if origClientOrderId != "": params["origClientOrderId"] = origClientOrderId
-    if newClientOrderId != "": params["newClientOrderId"] = newClientOrderId
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isIsolated: params["isIsolated"] = isIsolated
+    if orderId: params["orderId"] = orderId
+    if origClientOrderId: params["origClientOrderId"] = origClientOrderId
+    if newClientOrderId: params["newClientOrderId"] = newClientOrderId
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return deletebinancedata_sig(endpoint, params)
 
@@ -2160,8 +2160,8 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isIsolated: params["isIsolated"] = isIsolated
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return deletebinancedata_sig(endpoint, params)
 
@@ -2190,14 +2190,14 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if asset != "": params["asset"] = asset
-    if type != "": params["type"] = type
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if archived != "": params["archived"] = archived
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if type: params["type"] = type
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if archived: params["archived"] = archived
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2227,14 +2227,14 @@ timestamp	|LONG	|YES	|
     params = {
         "asset": asset
     }
-    if isolatedSymbol != "": params["isolatedSymbol"] = isolatedSymbol
-    if txId != "": params["txId"] = txId
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if archived != "": params["archived"] = archived
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isolatedSymbol: params["isolatedSymbol"] = isolatedSymbol
+    if txId: params["txId"] = txId
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if archived: params["archived"] = archived
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2264,14 +2264,14 @@ timestamp	|LONG	|YES	|
     params = {
         "asset": asset
     }
-    if isolatedSymbol != "": params["isolatedSymbol"] = isolatedSymbol
-    if txId != "": params["txId"] = txId
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if archived != "": params["archived"] = archived
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isolatedSymbol: params["isolatedSymbol"] = isolatedSymbol
+    if txId: params["txId"] = txId
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if archived: params["archived"] = archived
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2300,14 +2300,14 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if asset != "": params["asset"] = asset
-    if isolatedSymbol != "": params["isolatedSymbol"] = isolatedSymbol
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if archived != "": params["archived"] = archived
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if isolatedSymbol: params["isolatedSymbol"] = isolatedSymbol
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if archived: params["archived"] = archived
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2334,12 +2334,12 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if isolatedSymbol != "": params["isolatedSymbol"] = isolatedSymbol
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if isolatedSymbol: params["isolatedSymbol"] = isolatedSymbol
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2361,7 +2361,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2387,10 +2387,10 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if orderId != "": params["orderId"] = orderId
-    if origClientOrderId != "": params["origClientOrderId"] = origClientOrderId
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isIsolated: params["isIsolated"] = isIsolated
+    if orderId: params["orderId"] = orderId
+    if origClientOrderId: params["origClientOrderId"] = origClientOrderId
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2414,9 +2414,9 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if symbol != "": params["symbol"] = symbol
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if symbol: params["symbol"] = symbol
+    if isIsolated: params["isIsolated"] = isIsolated
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2445,12 +2445,12 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if isIsolated != "": params["isIsolated"] = isIsolated
-    if orderId != "": params["orderId"] = orderId
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isIsolated: params["isIsolated"] = isIsolated
+    if orderId: params["orderId"] = orderId
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2474,8 +2474,8 @@ timestamp	|LONG	|YES	|
     params = {
         "asset": asset
     }
-    if isolatedSymbol != "": params["isolatedSymbol"] = isolatedSymbol
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isolatedSymbol: params["isolatedSymbol"] = isolatedSymbol
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2499,8 +2499,8 @@ timestamp	|LONG	|YES	|
     params = {
         "asset": asset
     }
-    if isolatedSymbol != "": params["isolatedSymbol"] = isolatedSymbol
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if isolatedSymbol: params["isolatedSymbol"] = isolatedSymbol
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2531,7 +2531,7 @@ timestamp	|LONG	|YES	|
         "transTo": transTo,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -2561,14 +2561,14 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if asset != "": params["asset"] = asset
-    if transFrom != "": params["transFrom"] = transFrom
-    if transTo != "": params["transTo"] = transTo
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if transFrom: params["transFrom"] = transFrom
+    if transTo: params["transTo"] = transTo
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2591,8 +2591,8 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if symbols != "": params["symbols"] = symbols
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if symbols: params["symbols"] = symbols
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2615,7 +2615,7 @@ timestamp	|LONG	|YES	|
     params = {
         "symbol": symbol
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2637,7 +2637,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2661,9 +2661,9 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if spotBNBBurn != "": params["spotBNBBurn"] = spotBNBBurn
-    if interestBNBBurn != "": params["interestBNBBurn"] = interestBNBBurn
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if spotBNBBurn: params["spotBNBBurn"] = spotBNBBurn
+    if interestBNBBurn: params["interestBNBBurn"] = interestBNBBurn
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -2685,7 +2685,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2712,11 +2712,11 @@ timestamp	|LONG	|YES	|
     params = {
         "asset": asset
     }
-    if vipLevel != "": params["vipLevel"] = vipLevel
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if vipLevel: params["vipLevel"] = vipLevel
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2748,11 +2748,11 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if status != "": params["status"] = status
-    if featured != "": params["featured"] = featured
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if status: params["status"] = status
+    if featured: params["featured"] = featured
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2775,7 +2775,7 @@ timestamp	|LONG	|YES	|
     params = {
         "productId": productId
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2800,7 +2800,7 @@ timestamp	|LONG	|YES	|
         "productId": productId,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -2825,7 +2825,7 @@ timestamp	|LONG	|YES	|
         "productId": productId,
         "type": type
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2852,7 +2852,7 @@ timestamp	|LONG	|YES	|
         "amount": amount,
         "type": type
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -2875,7 +2875,7 @@ timestamp	|LONG	|YES	|
     params = {
         "asset": asset
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2904,13 +2904,13 @@ timestamp	|LONG	|YES	|
     params = {
         "type": type
     }
-    if asset != "": params["asset"] = asset
-    if status != "": params["status"] = status
-    if isSortAsc != "": params["isSortAsc"] = isSortAsc
-    if sortBy != "": params["sortBy"] = sortBy
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if status: params["status"] = status
+    if isSortAsc: params["isSortAsc"] = isSortAsc
+    if sortBy: params["sortBy"] = sortBy
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2935,7 +2935,7 @@ timestamp	|LONG	|YES	|
         "projectId": projectId,
         "lot": lot
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -2960,9 +2960,9 @@ timestamp	|LONG	|YES	|
     params = {
         "asset": asset
     }
-    if projectId != "": params["projectId"] = projectId
-    if status != "": params["status"] = status
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if projectId: params["projectId"] = projectId
+    if status: params["status"] = status
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -2984,7 +2984,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3012,12 +3012,12 @@ timestamp	|LONG	|YES	|
     params = {
         "lendingType": lendingType
     }
-    if asset != "": params["asset"] = asset
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3045,12 +3045,12 @@ timestamp	|LONG	|YES	|
     params = {
         "lendingType": lendingType
     }
-    if asset != "": params["asset"] = asset
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3078,12 +3078,12 @@ timestamp	|LONG	|YES	|
     params = {
         "lendingType": lendingType
     }
-    if asset != "": params["asset"] = asset
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3109,8 +3109,8 @@ timestamp	|LONG	|YES	|
         "projectId": projectId,
         "lot": lot
     }
-    if positionId != "": params["positionId"] = positionId
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if positionId: params["positionId"] = positionId
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -3353,7 +3353,7 @@ timestamp	|LONG	|YES	|
         "amount": amount,
         "type": type
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -3381,10 +3381,10 @@ timestamp	|LONG	|YES	|
         "asset": asset,
         "startTime": startTime
     }
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if size != "": params["size"] = size
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if size: params["size"] = size
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3411,9 +3411,9 @@ timestamp	|LONG	|YES	|
         "coin": coin,
         "collateralCoin": collateralCoin
     }
-    if amount != "": params["amount"] = amount
-    if collateralAmount != "": params["collateralAmount"] = collateralAmount
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if amount: params["amount"] = amount
+    if collateralAmount: params["collateralAmount"] = collateralAmount
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -3439,11 +3439,11 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if coin != "": params["coin"] = coin
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if coin: params["coin"] = coin
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3470,7 +3470,7 @@ timestamp	|LONG	|YES	|
         "collateralCoin": collateralCoin,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -3496,11 +3496,11 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if coin != "": params["coin"] = coin
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if coin: params["coin"] = coin
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3522,7 +3522,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3544,7 +3544,7 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3567,8 +3567,8 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if collateralCoin != "": params["collateralCoin"] = collateralCoin
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if collateralCoin: params["collateralCoin"] = collateralCoin
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3592,9 +3592,9 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if loanCoin != "": params["loanCoin"] = loanCoin
-    if collateralCoin != "": params["collateralCoin"] = collateralCoin
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if loanCoin: params["loanCoin"] = loanCoin
+    if collateralCoin: params["collateralCoin"] = collateralCoin
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3621,7 +3621,7 @@ timestamp	|LONG	|YES	|
         "amount": amount,
         "direction": direction
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3650,7 +3650,7 @@ timestamp	|LONG	|YES	|
         "amount": amount,
         "direction": direction
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3673,7 +3673,7 @@ timestamp	|LONG	|YES	|
     params = {
         "collateralCoin": collateralCoin
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3698,7 +3698,7 @@ timestamp	|LONG	|YES	|
         "loanCoin": loanCoin,
         "collateralCoin": collateralCoin
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3725,7 +3725,7 @@ timestamp	|LONG	|YES	|
         "amount": amount,
         "direction": direction
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -3754,7 +3754,7 @@ timestamp	|LONG	|YES	|
         "amount": amount,
         "direction": direction
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -3781,12 +3781,12 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if loanCoin != "": params["loanCoin"] = loanCoin
-    if collateralCoin != "": params["collateralCoin"] = collateralCoin
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if loanCoin: params["loanCoin"] = loanCoin
+    if collateralCoin: params["collateralCoin"] = collateralCoin
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3813,12 +3813,12 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if loanCoin != "": params["loanCoin"] = loanCoin
-    if collateralCoin != "": params["collateralCoin"] = collateralCoin
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if loanCoin: params["loanCoin"] = loanCoin
+    if collateralCoin: params["collateralCoin"] = collateralCoin
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3843,7 +3843,7 @@ timestamp	|LONG	|YES	|
         "coin": coin,
         "collateralCoin": collateralCoin
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3870,7 +3870,7 @@ timestamp	|LONG	|YES	|
         "collateralCoin": collateralCoin,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3893,7 +3893,7 @@ timestamp	|LONG	|YES	|
     params = {
         "quoteId": quoteId
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -3916,7 +3916,7 @@ timestamp	|LONG	|YES	|
     params = {
         "quoteId": quoteId
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3943,12 +3943,12 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if collateralCoin != "": params["collateralCoin"] = collateralCoin
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if current != "": params["current"] = current
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if collateralCoin: params["collateralCoin"] = collateralCoin
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if current: params["current"] = current
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -3975,7 +3975,7 @@ tokenName	|STRING	|NO	|BTCDOWN, BTCUP
     params = {
 
     }
-    if tokenName != "": params["tokenName"] = tokenName
+    if tokenName: params["tokenName"] = tokenName
 
     return getbinancedata(endpoint, params)
 
@@ -4000,7 +4000,7 @@ timestamp	|LONG	|YES	|
         "tokenName": tokenName,
         "cost": cost
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -4027,12 +4027,12 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if tokenName != "": params["tokenName"] = tokenName
-    if id != "": params["id"] = id
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if tokenName: params["tokenName"] = tokenName
+    if id: params["id"] = id
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -4057,7 +4057,7 @@ timestamp	|LONG	|YES	|
         "tokenName": tokenName,
         "amount": amount
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -4084,12 +4084,12 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if tokenName != "": params["tokenName"] = tokenName
-    if id != "": params["id"] = id
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if tokenName: params["tokenName"] = tokenName
+    if id: params["id"] = id
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -4112,8 +4112,8 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if tokenName != "": params["tokenName"] = tokenName
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if tokenName: params["tokenName"] = tokenName
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -4197,8 +4197,8 @@ timestamp	|LONG	|YES	|
         "type": type,
         "shareAmount": shareAmount
     }
-    if asset != "": params["asset"] = asset
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if asset: params["asset"] = asset
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -4226,13 +4226,13 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if operationId != "": params["operationId"] = operationId
-    if poolId != "": params["poolId"] = poolId
-    if operation != "": params["operation"] = operation
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if operationId: params["operationId"] = operationId
+    if poolId: params["poolId"] = poolId
+    if operation: params["operation"] = operation
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -4259,7 +4259,7 @@ timestamp	|LONG	|YES	|
         "baseAsset": baseAsset,
         "quoteQty": quoteQty
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -4286,7 +4286,7 @@ timestamp	|LONG	|YES	|
         "baseAsset": baseAsset,
         "quoteQty": quoteQty
     }
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return postbinancedata_sig(endpoint, params)
 
@@ -4315,14 +4315,14 @@ timestamp	|LONG	|YES	|
     params = {
 
     }
-    if swapId != "": params["swapId"] = swapId
-    if startTime != "": params["startTime"] = startTime
-    if endTime != "": params["endTime"] = endTime
-    if status != "": params["status"] = status
-    if quoteAsset != "": params["quoteAsset"] = quoteAsset
-    if baseAsset != "": params["baseAsset"] = baseAsset
-    if limit != "": params["limit"] = limit
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if swapId: params["swapId"] = swapId
+    if startTime: params["startTime"] = startTime
+    if endTime: params["endTime"] = endTime
+    if status: params["status"] = status
+    if quoteAsset: params["quoteAsset"] = quoteAsset
+    if baseAsset: params["baseAsset"] = baseAsset
+    if limit: params["limit"] = limit
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -4355,11 +4355,11 @@ timestamp	|LONG	|YES	|
     params = {
         "transactionType": transactionType
     }
-    if beginTime != "": params["beginTime"] = beginTime
-    if endTime != "": params["endTime"] = endTime
-    if page != "": params["page"] = page
-    if rows != "": params["rows"] = rows
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if beginTime: params["beginTime"] = beginTime
+    if endTime: params["endTime"] = endTime
+    if page: params["page"] = page
+    if rows: params["rows"] = rows
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
@@ -4386,11 +4386,11 @@ timestamp	|LONG	|YES	|
     params = {
         "transactionType": transactionType
     }
-    if beginTime != "": params["beginTime"] = beginTime
-    if endTime != "": params["endTime"] = endTime
-    if page != "": params["page"] = page
-    if rows != "": params["rows"] = rows
-    if recvWindow != "": params["recvWindow"] = recvWindow
+    if beginTime: params["beginTime"] = beginTime
+    if endTime: params["endTime"] = endTime
+    if page: params["page"] = page
+    if rows: params["rows"] = rows
+    if recvWindow: params["recvWindow"] = recvWindow
 
     return getbinancedata_sig(endpoint, params)
 
