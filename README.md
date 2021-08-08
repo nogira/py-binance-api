@@ -4,11 +4,11 @@
 
 Current APIs are very slow to update when new API endpoints are added.
 
-This wrapper solves that problem by scraping the [binance docs](https://binance-docs.github.io/apidocs) to generate the wrapper, allowing for near instantaneous updates as binance changes the API.
+This wrapper solves that problem by scraping the [binance docs](https://binance-docs.github.io/apidocs/spot/en/#change-log) to generate the wrapper, allowing for near instantaneous updates as binance changes the API.
 
 ### Documentation
 
-Functions include some built-in documentation, but if you're in need of more information, read the [binance docs](https://binance-docs.github.io/apidocs) (The parameters listed in the docs are the same name as in the python wrapper).
+Functions include some built-in documentation, but if you're in need of more information, read the [binance docs](https://binance-docs.github.io/apidocs/spot/en/#change-log) (The parameters listed in the docs are the same name as in the python wrapper).
 
 Also, to find the name of a function based on its title in the binance docs, just search the `function names.md` file in this repository.
 
