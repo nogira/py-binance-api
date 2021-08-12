@@ -1,6 +1,6 @@
 # Python Wrapper for the Binance API
 
-### Why make yet another python binance API wrapper?
+### Why make a new python binance API wrapper?
 
 Current APIs are very slow to update when new API endpoints are added.
 
