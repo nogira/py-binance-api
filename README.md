@@ -36,7 +36,7 @@ pb.vars(
     api_key='FaROkRyeIfyMeAS53cmVlzVHCTcpcM7qPf2Mlf9nz3QpOEmYbOGOugndQ11pyX8D', 
     api_secret='ZnDfwtZZ7s2QXhw5pw65rzT6IKX731fIj78M7MGpdmiH5UdMhyujBlRxBqZldDFm'
 )
-# can also declare 'baseurl' (default is https://api.binance.com) or 'email' (change '@' to '%40')
+# can also declare 'baseurl' (default = https://api.binance.com) or 'email' (change '@' to '%40')
 
 
 # function example
